@@ -1,0 +1,540 @@
+.wrap {
+  width: 100%;
+
+}
+
+.main {
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  background-color: rgb(11, 27, 133);
+
+}
+
+.main__block {
+  font-weight: 900;
+  font-size: 25px;
+  padding: 60px 0;
+  color: #fff;
+  width: 140px;
+  height: 140px;
+  border: 1px solid black;
+  background-color: rgb(167, 17, 184);
+  animation-duration: 25s;
+
+}
+
+.main__flex {
+  border: 2px solid black;
+  width: 300px;
+  height: 100px;
+  position: relative;
+  top: -300px;
+  left: 40%;
+  font-size: 40px;
+  font-weight: 900;
+  padding-top: 25px;
+  background-color: orange;
+
+  opacity: 0;
+
+}
+
+.flex {
+  animation-name: flex;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes flex {
+  10% {
+    opacity: 1;
+  }
+
+  10.5% {
+    opacity: 0;
+  }
+}
+
+.end {
+
+  top: -400px;
+  animation-name: end;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes end {
+  10% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  20.5% {
+    opacity: 0;
+  }
+}
+
+.center {
+  top: -500px;
+  animation: center;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes center {
+  20% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  30.5% {
+    opacity: 0;
+  }
+}
+
+.between {
+  top: -600px;
+  animation: between;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes between {
+  30% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  40.5% {
+    opacity: 0;
+  }
+
+}
+
+.around {
+  top: -700px;
+  animation: around;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes around {
+  40% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  50.5% {
+    opacity: 0;
+  }
+
+}
+
+.evenly {
+  top: -800px;
+  animation: evenly;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes evenly {
+  50% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  60.5% {
+    opacity: 0;
+  }
+
+}
+
+.column {
+  top: -900px;
+  animation-name: column;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes column {
+  60% {
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  70.5% {
+    opacity: 0;
+  }
+}
+
+.reverse {
+  top: -1000px;
+  animation-name: reverse;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes reverse {
+  70% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  80.5% {
+    opacity: 0;
+  }
+}
+
+.order {
+  top: -1100px;
+  animation-name: order;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes order {
+  80% {
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  90.5% {
+    opacity: 0;
+  }
+}
+
+.one {
+  animation-name: first;
+  animation-iteration-count: infinite;
+}
+
+@keyframes first {
+  10% {
+    background: black;
+    transform: translate(0, 0);
+  }
+
+  20% {
+    transform: translate(700px, 0);
+    background: red;
+  }
+
+  30% {
+    transform: translate(300px, 0);
+    background-color: purple;
+    color: white;
+  }
+
+  40% {
+    transform: translate(0, 0);
+    background-color: aqua;
+    color: black;
+  }
+
+  50% {
+    transform: translate(50px, 0);
+    background-color: brown;
+    color: white;
+  }
+
+  60% {
+    transform: translate(100px, 0);
+    background-color: green;
+    color: black;
+  }
+
+  70% {
+    transform: translate(400px, 0);
+    background-color: purple;
+    color: wheat;
+  }
+
+  80% {
+    transform: translate(400px, 600px);
+    background-color: black;
+    color: wheat;
+    border: 1px solid #fff;
+  }
+
+  90% {
+    transform: translate(280px, 0);
+    background-color: pink;
+    color: black;
+    border: 1px solid black;
+  }
+}
+
+.two {
+  animation-name: second;
+  animation-iteration-count: infinite;
+}
+
+@keyframes second {
+  10% {
+    transform: translate(140px, -140px);
+    background: black;
+  }
+
+  20% {
+    transform: translate(840px, -140px);
+    background: red;
+  }
+
+  30% {
+    transform: translate(440px, -140px);
+    background-color: purple;
+    color: white;
+  }
+
+  40% {
+    transform: translate(240px, -140px);
+    background-color: aqua;
+    color: black;
+  }
+
+  50% {
+    transform: translate(290px, -140px);
+    background-color: brown;
+    color: white;
+  }
+
+  60% {
+    transform: translate(340px, -140px);
+    background-color: green;
+    color: black;
+  }
+
+  70% {
+    transform: translate(400px, 0);
+    background-color: purple;
+    color: wheat;
+  }
+
+  80% {
+    transform: translate(400px, 320px);
+    background-color: black;
+    color: wheat;
+    border: 1px solid #fff;
+  }
+
+  90% {
+    transform: translate(0, -140px);
+    background-color: pink;
+    color: black;
+    border: 1px solid black;
+  }
+
+}
+
+.three {
+  animation-name: third;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes third {
+  10% {
+    transform: translate(280px, -280px);
+    background: black;
+  }
+
+  20% {
+    transform: translate(980px, -280px);
+    background: red;
+  }
+
+  30% {
+    transform: translate(580px, -280px);
+    background-color: purple;
+    color: white;
+  }
+
+  40% {
+    transform: translate(480px, -280px);
+    background-color: aqua;
+    color: black;
+  }
+
+  50% {
+    transform: translate(530px, -280px);
+    background-color: brown;
+    color: white;
+  }
+
+  60% {
+    transform: translate(580px, -280px);
+    background-color: green;
+    color: black;
+  }
+
+  70% {
+    transform: translate(400px, 0);
+    background-color: purple;
+    color: wheat;
+  }
+
+  80% {
+    transform: translate(400px, 40px);
+    background-color: black;
+    color: wheat;
+    border: 1px solid #fff;
+  }
+
+  90% {
+    transform: translate(560px, -280px);
+    background-color: pink;
+    color: black;
+    border: 1px solid black;
+  }
+
+}
+
+.four {
+  animation-name: fourth;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fourth {
+  10% {
+    transform: translate(420px, -420px);
+    background: black;
+  }
+
+  20% {
+    transform: translate(1120px, -420px);
+    background: red;
+  }
+
+  30% {
+    transform: translate(720px, -420px);
+    background-color: purple;
+    color: white;
+  }
+
+  40% {
+    transform: translate(720px, -420px);
+    background-color: aqua;
+    color: black;
+  }
+
+  50% {
+    transform: translate(770px, -420px);
+    background-color: brown;
+    color: white;
+  }
+
+  60% {
+    transform: translate(820px, -420px);
+    background-color: green;
+    color: black;
+  }
+
+  70% {
+    transform: translate(400px, 0);
+    background-color: purple;
+    color: wheat;
+  }
+
+  80% {
+    transform: translate(400px, -240px);
+    background-color: black;
+    color: wheat;
+    border: 1px solid #fff;
+  }
+
+  90% {
+    transform: translate(420px, -420px);
+    background-color: pink;
+    color: black;
+    border: 1px solid black;
+  }
+
+
+
+}
+
+.five {
+  animation-name: fifth;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fifth {
+  10% {
+    transform: translate(560px, -560px);
+    background: black;
+  }
+
+  20% {
+    transform: translate(1260px, -560px);
+    background: red;
+  }
+
+  30% {
+    transform: translate(860px, -560px);
+    background-color: purple;
+    color: white;
+  }
+
+  40% {
+    transform: translate(960px, -560px);
+    background-color: aqua;
+    color: black;
+  }
+
+  50% {
+    transform: translate(1010px, -560px);
+    background-color: brown;
+    color: white;
+  }
+
+  60% {
+    transform: translate(1060px, -560px);
+    background-color: green;
+    color: black;
+  }
+
+  70% {
+    transform: translate(400px, 0);
+    background-color: purple;
+    color: wheat;
+  }
+
+  80% {
+    transform: translate(400px, -520px);
+    background-color: black;
+    color: wheat;
+    border: 1px solid #fff;
+  }
+
+  90% {
+    transform: translate(140px, -560px);
+    background-color: pink;
+    color: black;
+    border: 1px solid black;
+  }
+}
